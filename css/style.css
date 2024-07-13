@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mytitle {
+    box-shadow: 0px 2px 4px grey;
+    padding: 10px;
+    border-radius: 7px;
+    /*&:before {
+        content: "";
+        padding-right: 10px;
+        border-left: 1px solid red; 
+    } */
+     &:after {
+        content: "Student's Bio";
+        color: orange;
+     }
+     margin: 20px;
+}
+
+.myicon {
+    color: antiquewhite;
+    border: 1px solid rgb(135, 158, 159);
+    padding: 10px;
+    border-radius: 50%;
+    background-color:aqua
+}
+
+.aboutme {
+    position: relative;
+    border-left: 2px solid rgb(132, 144, 132);
+    padding-left: 20px;
+    margin: 20px;
+
+    &::before  {
+
+    }
+    &::after {
+        content: "Hey, I am Lucas, Yangon. I enjoy coding.Now I am coding on HTML, CSS, and JavaScript.";
+        color: aqua;
+    }
+}
+
+.mypen {
+    position: absolute;
+    color: azure;
+    font-size: 20px;
+    left: -30px;
+    top: -50px;
+}
+
+.myimage {
+    --shape: "50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%" ;
+    width: 100px;
+    /* border-radius: 50%; */
+    clip-path: polygon(var(--shape));
+    background-color: dimgray;
+    padding: 30px;
+    cursor: pointer;
+    margin-left: 25%;
+}
+
+.mycontact {
+    border: 1px solid gray;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: grey;
+    padding: 30px;
+    margin: 10px;
+}
+.email { 
+    color: aqua;
+    box-shadow: 0px 1px 2px whitesmoke;
+    width: 100%;
+    padding: 5px;
+    /*background-color: aliceblue;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;*/
+    &:before {
+        border: 1px solid;
+        padding: 5px 20px 5px 5px;
+        width: 20px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-color: whitesmoke;
+    }
+    &:after {
+        content: "Email: phonepyaethetpaing124@gmail.com";
+        font-family: sans-serif;
+        padding-left: 10px;
+    }
+}
+    .address { 
+        color: aqua;
+        box-shadow: 0px 1px 2px whitesmoke;
+        width: 100%;
+        padding: 5px;
+        /*background-color: aliceblue;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;*/
+    &:before {
+        border: 1px solid;
+        padding: 5px 20px 5px 5px;
+        width: 20px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-color: whitesmoke;
+    }
+    &:after {
+        content: "address: North Dagon,Yangon";
+        font-family: sans-serif;
+        padding-left: 10px;
+    }
+}
+
+.phone { 
+    color: aqua;
+    box-shadow: 0px 1px 2px whitesmoke;
+    width: 100%;
+    padding: 5px;
+    /*background-color: aliceblue;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;*/
+&:before {
+    border: 1px solid;
+    padding: 5px 20px 5px 5px;
+    width: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: whitesmoke;
+}
+&:after {
+    content: "phone: 09974979172";
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+}
+
+.github { 
+    color: aqua;
+    box-shadow: 0px 1px 2px whitesmoke;
+    width: 100%;
+    padding: 5px;
+    /*background-color: aliceblue;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;*/
+&:before {
+    border: 1px solid;
+    padding: 5px 20px 5px 5px;
+    width: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: whitesmoke;
+}
+&:after {
+    content: "Github: Lucas";
+    font-family: sans-serif;
+    padding-left: 10px;
+ }
+}
